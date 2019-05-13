@@ -25,6 +25,7 @@
     "jest": true
   },
   "rules": {
+    "jsx-a11y/label-has-associated-control": 0,
     "no-console": 1,
     "linebreak-style": ["error", "unix"],
     "react/jsx-filename-extension": [

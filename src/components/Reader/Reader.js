@@ -24,10 +24,11 @@ export default class Reader extends Component {
   onIncrement = () => {
     this.setState(prevState => {
       const { step } = this.state;
+      const { items } = this.props;
 
       return {
-        currentIndexItem: this.props.items.indexOf(
-          this.props.items[[prevState.currentIndexItem - step]],
+        currentIndexItem: items.indexOf(
+          items[[prevState.currentIndexItem - step]],
         ),
       };
     });
@@ -36,10 +37,11 @@ export default class Reader extends Component {
   onDicrement = () => {
     this.setState(prevState => {
       const { step } = this.state;
+      const { items } = this.props;
 
       return {
-        currentIndexItem: this.props.items.indexOf(
-          this.props.items[[prevState.currentIndexItem + step]],
+        currentIndexItem: items.indexOf(
+          items[[prevState.currentIndexItem + step]],
         ),
       };
     });
