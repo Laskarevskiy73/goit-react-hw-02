@@ -18,7 +18,7 @@ export default class Reader extends Component {
 
   state = {
     step: 1,
-    currentIndexItem: this.props.items.indexOf(this.props.items[0]),
+    currentIndexItem: 0,
   };
 
   onIncrement = () => {
